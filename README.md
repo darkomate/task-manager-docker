@@ -1,13 +1,5 @@
 # Task Manager Docker Project
-This project is taken from Himnish Chopra Video on Full Stack App with Docker in Minutes.
-
-## 
-
------------------------------------------------------------------------------------
-- Youtube: https://www.youtube.com/watch?v=K7PsxBMeBCI                            -
-- Files: https://drive.google.com/drive/folders/1Il_RsPJQbJt0veH1n7KVhvhNEZW2WGb5 -
-- Time: 9:27                                                                      -
------------------------------------------------------------------------------------
+Task Manager Docker project using Nginx, Node, MongoDB and HTML.
 
 Pull MongoDB latest image
 ````bash
@@ -217,7 +209,7 @@ Run the newly created backend image.
 docker run -d --name backend --network task-manager-network -p 3000:3000 backend:latest
 ````
 
-Confirm that databases adding records correctly.
+Confirm that database has added records correctly.
 ````bash
 docker exec -it mongodb mongosh
 show dbs
